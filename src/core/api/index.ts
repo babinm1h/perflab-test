@@ -6,3 +6,7 @@ export const $apiInstance = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
+export const $instance = axios.create({
+  baseURL: '',
+});

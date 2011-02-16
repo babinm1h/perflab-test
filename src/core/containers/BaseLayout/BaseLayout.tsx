@@ -1,6 +1,6 @@
 import { Sidebar } from '@/shared/components/Sidebar';
 import { useBooleanState } from '@/shared/hooks';
-import { Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import { Button } from '@/shared/components/Button';
 import { ProductsCart } from '@/modules/Products/containers';
 
@@ -16,6 +16,9 @@ export const BaseLayout = () => {
         <Sidebar isOpen={isTrue} onClose={setFalse}>
           <ProductsCart />
         </Sidebar>
+
+        <NavLink to="/">Products</NavLink>
+        <NavLink to="/users">Users</NavLink>
       </header>
       <Outlet />
     </div>

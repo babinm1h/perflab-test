@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import s from './Button.module.scss';
 
-interface IButtonProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {}
+interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
 export const Button = ({ children, className, ...props }: PropsWithChildren<IButtonProps>) => {
   return (
