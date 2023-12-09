@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  .price {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
